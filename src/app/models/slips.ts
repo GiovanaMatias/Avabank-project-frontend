@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Account from "./account";
 import { Transactions } from "./transactions";
 export class Slips {
@@ -23,4 +24,38 @@ export class Slips {
             this.caminho_arquivo=caminho_arquivo;
             this.extencao_boleto=extencao_boleto;
         }
+=======
+import { Account } from "./account";
+import { Transactions } from "./transactions";
+export class Slips {
+
+    slipId?: number;
+    barcode: string;
+    amount: number;
+    status: string;
+    dueDate: Date;
+    paymentdate: string;
+    filePath: string;
+    slipExtension: string;
+
+    constructor(
+        slipId: number,
+        barcode: string,
+        amount: number,
+        status: string,
+        dueDate: Date,
+        paymentdate: string,
+        filePath: string,
+        slipExtension: string
+    ) {
+        this.slipId = slipId
+        this.barcode = barcode
+        this.amount = amount
+        this.status = status
+        this.dueDate = dueDate
+        this.paymentdate = paymentdate
+        this.filePath = filePath
+        this.slipExtension = slipExtension
+    }
+>>>>>>> 371db35 (update model)
 }

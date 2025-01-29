@@ -6,6 +6,7 @@ import { Transactions } from "./transactions";
 
 
 export class Account {
+<<<<<<< HEAD
     id_Conta?: number;
      tipo_Conta: string;
      numero_Conta: string;
@@ -44,3 +45,42 @@ export class Account {
 
 }
    
+=======
+    accountId?: number;
+    accountType: string;
+    accountNumber: string;
+    agency: number;
+    balance: number;
+    localDateTime: Date;
+    password: string;
+    customerCpf: string;
+    benefitId: number;
+    UserId: number;
+
+
+    constructor(
+        accountId: number,
+        accountType: string,
+        accountNumber: string,
+        agency: number,
+        balance: number,
+        localDateTime: Date,
+        password: string,
+        customerCpf: string,
+        benefitId: number,
+        UserId: number
+    ) {
+        this.accountId = accountId
+        this.accountType = accountType
+        this.accountNumber = accountNumber
+        this.agency = agency
+        this.balance = balance
+        this.localDateTime = localDateTime
+        this.password = password
+        this.customerCpf = customerCpf
+        this.benefitId = benefitId
+        this.UserId = UserId
+    }
+}
+
+>>>>>>> 371db35 (update model)
