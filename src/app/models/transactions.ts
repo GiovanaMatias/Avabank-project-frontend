@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import Account from "./account";
-import { Slips } from "./slips";
-
-export class Transactions {
-    id_Transacao?:number;
-    id_conta_origem: number;
-    id_conta_destino: number;
-    valor:number;
-    tipo_Transacao:string;
-    data_Hora:Data;
-    
-=======
 import { Account } from "./account";
 import { Slips } from "./slips";
 
@@ -47,5 +34,4 @@ export class Transactions {
         this.pix = pix
     }
 
->>>>>>> 371db35 (update model)
 }

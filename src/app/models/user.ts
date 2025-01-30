@@ -1,18 +1,11 @@
 import { UserType } from "./user-type";
 import { Logs } from "./logs";
-<<<<<<< HEAD
-import { Address } from "cluster";
-import Account from "./account";
-=======
 import { Address } from "./address";
 import { Account } from "./account";
->>>>>>> 371db35 (update model)
 
 
 
 export class User {
-<<<<<<< HEAD
-=======
     userId: number;
     name: string;
     cpf: string;
@@ -47,5 +40,4 @@ export class User {
         this.password = password
         this.enabled = enabled
     }
->>>>>>> 371db35 (update model)
 }
